@@ -54,6 +54,7 @@ imageCodeSnippet.setAttribute('src', siteContent.cta["img-src"]);
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+// Main Content Headers
 const h4s = document.querySelectorAll('h4');
 const h4Features = h4s[0].textContent = siteContent['main-content']['features-h4'];
 const h4About = h4s[1].textContent = siteContent['main-content']['about-h4'];
@@ -61,6 +62,7 @@ const h4Services = h4s[2].textContent = siteContent['main-content']['services-h4
 const h4Product = h4s[3].textContent = siteContent['main-content']['product-h4'];
 const h4Vision = h4s[4].textContent = siteContent['main-content']['vision-h4'];
 
+// Main Content Paragraphs
 const allP = document.querySelectorAll('p');
 const featuresP = allP[0].textContent = siteContent['main-content']['features-content'];
 const aboutP = allP[1].textContent = siteContent['main-content']['about-content'];
@@ -68,4 +70,8 @@ const servicesP = allP[2].textContent = siteContent['main-content']['services-co
 const productP = allP[3].textContent = siteContent['main-content']['product-content'];
 const visionP = allP[4].textContent = siteContent['main-content']['vision-content'];
 
-
+// Footer
+const h4Contact = h4s[5].textContent = siteContent.contact['contact-h4'];
+const addressP = allP[5].textContent = siteContent.contact.address;
+const phoneP = allP[6].textContent = siteContent.contact.phone;
+const emailP = allP[7].textContent = siteContent.contact.email;

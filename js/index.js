@@ -46,6 +46,8 @@ const features = navLinks[3].textContent = siteContent.nav['nav-item-4'];
 const about = navLinks[4].textContent = siteContent.nav['nav-item-5'];
 const contact = navLinks[5].textContent = siteContent.nav['nav-item-6'];
 
+
+
 //Creating and Appending elements
 const prependedA = document.createElement('a');
 const appendedA = document.createElement('a');
@@ -53,7 +55,8 @@ prependedA.textContent = 'Prepended';
 appendedA.textContent = 'Appended';
 document.querySelector('nav').prepend(prependedA);
 document.querySelector('nav').append(appendedA);
-
+navLinks.forEach(link => link.style.color = 'green');
+prependedA.style.color = 'green';
 // Changing font color to green
 // navLinks.style.color = 'green';
 

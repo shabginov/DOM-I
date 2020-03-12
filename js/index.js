@@ -57,6 +57,7 @@ document.querySelector('nav').prepend(prependedA);
 document.querySelector('nav').append(appendedA);
 navLinks.forEach(link => link.style.color = 'green');
 prependedA.style.color = 'green';
+appendedA.style.color = 'green';
 // Changing font color to green
 // navLinks.style.color = 'green';
 

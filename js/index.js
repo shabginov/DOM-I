@@ -70,8 +70,11 @@ const servicesP = allP[2].textContent = siteContent['main-content']['services-co
 const productP = allP[3].textContent = siteContent['main-content']['product-content'];
 const visionP = allP[4].textContent = siteContent['main-content']['vision-content'];
 
-// Footer
+// Contact
 const h4Contact = h4s[5].textContent = siteContent.contact['contact-h4'];
 const addressP = allP[5].textContent = siteContent.contact.address;
 const phoneP = allP[6].textContent = siteContent.contact.phone;
 const emailP = allP[7].textContent = siteContent.contact.email;
+
+// Footer
+const footer = allP[8].textContent = siteContent.footer.copyright;

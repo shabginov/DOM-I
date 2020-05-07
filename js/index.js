@@ -43,12 +43,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav elements
 const links = document.querySelectorAll("a");
-links[0].textContent = siteContent.nav["nav-item-1"];
-links[1].textContent = siteContent.nav["nav-item-2"];
-links[2].textContent = siteContent.nav["nav-item-3"];
-links[3].textContent = siteContent.nav["nav-item-4"];
-links[4].textContent = siteContent.nav["nav-item-5"];
-links[5].textContent = siteContent.nav["nav-item-6"];
+// console.log(links.length);
+// console.log(links[0].textContent = 'hi');
+// for (prop in siteContent.nav) {
+//   links[prop].textContent = siteContent.nav[prop];
+// }
+// for (prop in siteContent.nav) {
+//   console.log(prop);
+//   // links[prop].textContent = siteContent.nav[prop];
+//   // console.log(siteContent.nav[prop]);
+// }
+// console.log(siteContent.nav[`nav-item-${1}`]);
+
+for (let i = 0; i < links.length; i++) {
+  links[i].textContent = siteContent.nav[`nav-item-${i}`];
+}
+// links[0].textContent = siteContent.nav["nav-item-1"];
+// links[1].textContent = siteContent.nav["nav-item-2"];
+// links[2].textContent = siteContent.nav["nav-item-3"];
+// links[3].textContent = siteContent.nav["nav-item-4"];
+// links[4].textContent = siteContent.nav["nav-item-5"];
+// links[5].textContent = siteContent.nav["nav-item-6"];
 // siteContent.forEach(item) => nav.textContent = nav.item;
 
 // cta elements
@@ -90,7 +105,7 @@ pContact[2].textContent = siteContent.contact.email;
 
 // footer
 const footerP = document.querySelector('footer p');
-console.log(footerP);
+// console.log(footerP);
 footerP.textContent = siteContent.footer.copyright;
 
 // changing nav items to green
@@ -112,9 +127,9 @@ nav.append(appendedElement)
 const changeButton = document.createElement('button');
 changeButton.textContent = 'Change background';
 const divCta = document.querySelector('div.cta-text');
-console.log(divCta);
+// console.log(divCta);
 divCta.append(changeButton);
 const body = document.querySelector('body');
-console.log(body);
+// console.log(body);
 
 changeButton.addEventListener('click', () => body.style.backgroundColor = 'blue');

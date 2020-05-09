@@ -56,7 +56,7 @@ const links = document.querySelectorAll("a");
 // console.log(siteContent.nav[`nav-item-${1}`]);
 
 for (let i = 0; i < links.length; i++) {
-  links[i].textContent = siteContent.nav[`nav-item-${i}`];
+  links[i].textContent = siteContent.nav[`nav-item-${i+1}`];
 }
 // links[0].textContent = siteContent.nav["nav-item-1"];
 // links[1].textContent = siteContent.nav["nav-item-2"];
